@@ -9,15 +9,15 @@
     </div>
 
     <div id="content">
-      <div class="circle"><div class="inner-num">3</div></div>
+      <div class="circle"><div class="left-side">3</div></div>
       <div class="sign">+</div>
-      <div class="circle"><div class="inner-num">?</div></div>
+      <div class="circle">?</div>
       <div class="sign">=</div>
-      <div class="circle"><div class="inner-num">7</div></div>
+      <div class="circle"><div class="answer">7</div></div>
     </div>
 
     <div id="question">
-      <div class="circle"><div class="inner-num">?</div></div>
+      <div class="circle">?</div>
       <span>はどれでしょう？</span>
     </div>
 
@@ -30,12 +30,12 @@
   <div id="numbers">
     <div class="numbers-content">
       <% (0..4).each do |i| %>
-        <%= link_to i, {controller: "collects", action: "show"}, class: "col md-2 btn input-num" %>
+        <%= link_to i, {controller: "collects", action: "show"}, class: "col md-2 btn input-num", data: {value: i} %>
       <% end %>
     </div>
     <div class="numbers-content">
       <% (5..9).each do |i| %>
-        <%= link_to i, {controller: "collects", action: "show"}, class: "col md-2 btn input-num" %>
+        <%= link_to i, {controller: "collects", action: "show"}, class: "col md-2 btn input-num", data: {value: i} %>
       <% end %>
     </div>
   </div>
