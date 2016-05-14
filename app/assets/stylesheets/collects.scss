@@ -1,3 +1,51 @@
 // Place all the styles related to the Collects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$DARK_PRIMARY_COLOR: #0288D1;
+$DEFAULT_PRIMARY_COLOR: #03A9F4;
+$LIGHT_PRIMARY_COLOR: #B3E5FC;
+$ACCENT_COLOR: #FFEB3B;
+$PRIMARY_TEXT_COLOR: #212121;
+$SECONDARY_TEXT_COLOR: #727272;
+$STRONG_TEXT_COLOR: #E91E63;
+$ACTION_COLOR: #009688;
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.align-items {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#collect-container {
+  @extend .flex-box;
+  @extend .align-items;
+
+  color: $LIGHT_PRIMARY_COLOR;
+  background-color: $DEFAULT_PRIMARY_COLOR;
+  padding: 5em 0;
+
+  .title {
+    color: $STRONG_TEXT_COLOR;
+    font-size: 5em;
+    padding: 0.6em 3.6em;
+  }
+
+  .description {
+    font-size: 4em;
+    padding: 0.6em 3.6em;
+  }
+
+  .next-buttons {
+    padding: 0.6em 0;
+    font-size: 6em;
+  }
+}

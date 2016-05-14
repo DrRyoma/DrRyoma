@@ -9,23 +9,40 @@ $ACCENT_COLOR: #FFEB3B;
 $PRIMARY_TEXT_COLOR: #212121;
 $SECONDARY_TEXT_COLOR: #727272;
 
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.align-items {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
 #opening-container {
+  @extend .flex-box;
+  @extend .align-items;
+
   color: $LIGHT_PRIMARY_COLOR;
   background-color: $DEFAULT_PRIMARY_COLOR;
-  padding: 100px 0;
-  width: 100vw;
-  height: 100vh;
+  padding: 5em 0;
 
   .title {
     font-size: 5em;
-    padding: 100px 0;
+    padding: 0.6em 1.8em;
   }
+
   .description {
     font-size: 4em;
-    padding: 50px 0;
+    padding: 0.6em 1.8em;
   }
+  
   .opening-button {
-    padding: 50px 0;
-    font-size: 5em;
+    padding: 0.6em 0;
+    font-size: 6em;
   }
 }
