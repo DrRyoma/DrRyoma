@@ -35,7 +35,7 @@
     </div>
     <div class="numbers-content">
       <% (5..9).each do |i| %>
-        <button class="col md-2 btn input-num"><%= i %></button>
+        <%= link_to i, {controller: "collects", action: "show"}, class: "col md-2 btn input-num" %>
       <% end %>
     </div>
   </div>
