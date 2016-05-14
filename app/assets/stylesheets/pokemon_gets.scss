@@ -48,8 +48,15 @@ $ACTION_COLOR: #009688;
   }
 
   .collections {
+    padding-top: 1em;
     font-size: 4em;
-    height: 5em;
+    height: 26em;
+  }
+
+  .block {
+   border-width: 0.5em;
+   border-color: $LIGHT_PRIMARY_COLOR;
+   border-style: solid;
   }
 
   .next-buttons {
