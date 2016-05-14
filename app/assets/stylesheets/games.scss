@@ -64,6 +64,7 @@ $ACTION_COLOR: #009688;
   header {
     padding: 20px 20px;
     background-color: $DARK_PRIMARY_COLOR;
+    font-size: 20px;
     color: #FFF;
   }
 }
@@ -120,7 +121,7 @@ $ACTION_COLOR: #009688;
       height: 100px;
       width: 400px;
       text-align: center;
-      font-size: 30px;
+      font-size: 40px;
       color: $SECONDARY_TEXT_COLOR;
     }
     .bubble:after {
