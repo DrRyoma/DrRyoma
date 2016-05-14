@@ -9,6 +9,7 @@ $ACCENT_COLOR: #FFEB3B;
 $PRIMARY_TEXT_COLOR: #212121;
 $SECONDARY_TEXT_COLOR: #727272;
 $STRONG_TEXT_COLOR: #F8BBD0;
+$ACTION_COLOR: #009688;
 
 .flex-box {
   display: -webkit-box;
@@ -69,7 +70,7 @@ $STRONG_TEXT_COLOR: #F8BBD0;
 
 #question-container {
   background-color: $DEFAULT_PRIMARY_COLOR;
-  padding: 100px 20px;
+  padding: 30px 20px;
 
   #description {
     font-size: 50px;
@@ -85,7 +86,7 @@ $STRONG_TEXT_COLOR: #F8BBD0;
   #content {
     @extend .flex-box;
     @extend .align-items;
-    margin-top: 30px;
+    margin-top: 15px;
 
     .sign {
       font-size: 100px;
@@ -97,7 +98,7 @@ $STRONG_TEXT_COLOR: #F8BBD0;
     @extend .flex-box;
     @extend .align-items;
     font-size: 30px;
-    margin-top: 80px;
+    margin-top: 50px;
 
     span {
       margin-left: 15px;
@@ -108,7 +109,7 @@ $STRONG_TEXT_COLOR: #F8BBD0;
   #navigation {
     @extend .flex-box;
     @extend .align-items;
-    margin-top: 30px;
+    margin-top: 15px;
 
     .bubble {
       display: inline-block;
@@ -140,10 +141,11 @@ $STRONG_TEXT_COLOR: #F8BBD0;
 #numbers {
   padding: 30px 20px;
 
-  #numbers-top {
-    @extend .flex-box;
-  }
-  #numbers-buttom {
-    @extend .flex-box;
+  .input-num {
+    background-color: $ACTION_COLOR;
+    margin: 20px 10px;
+    height: 200px;
+    font-size: 80px;
+    color: $PRIMARY_TEXT_COLOR;
   }
 }
