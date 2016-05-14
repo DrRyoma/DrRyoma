@@ -1,3 +1,22 @@
 // Place all the styles related to the Openings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$DARK_PRIMARY_COLOR: #0288D1;
+$DEFAULT_PRIMARY_COLOR: #03A9F4;
+$LIGHT_PRIMARY_COLOR: #B3E5FC;
+$ACCENT_COLOR: #FFEB3B;
+$PRIMARY_TEXT_COLOR: #212121;
+$SECONDARY_TEXT_COLOR: #727272;
+
+#opening-container {
+  color: $LIGHT_PRIMARY_COLOR;
+  background-color: $DEFAULT_PRIMARY_COLOR;
+  padding: 100px 0;
+  width: 100vw;
+  height: 100vh;
+
+  .title {
+    font-size: 5em;
+  }
+}

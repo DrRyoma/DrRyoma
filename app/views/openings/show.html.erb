@@ -1,8 +1,12 @@
-<div class="row">
-  <div class="col md-12 text-center">
-    <h1>リョウタ算数博士</h1>
-    <%= image_tag("pikachu") %>
-    <h1>すうじをこたえてポケモンをゲットしよう</h1>
-    <%= link_to "はじめる", {:controller => "games", :action => "show"}, :class => "btn" %>
+<div id="opening-container">
+  <div class="row">
+    <div class="col md-12 text-center">
+      <div class="title">
+        <p>リョウタ算数博士</p>
+      </div>
+      <%= image_tag("pikachu.png") %>
+      <h1>すうじをこたえてポケモンをゲットしよう</h1>
+      <%= link_to "はじめる", {:controller => "games", :action => "show"}, :class => "btn" %>
+    </div>
   </div>
 </div>
