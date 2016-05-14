@@ -56,4 +56,24 @@ $ACTION_COLOR: #009688;
     padding: 0.6em 0;
     font-size: 6em;
   }
+
+  .pokemons {
+    padding-left: 1.5em;
+  }
+
+  .circle-not-got{
+    background-color: GRAY;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    margin-bottom: 1em;
+  }
+
+  .circle-got{
+    background-color: $ACCENT_COLOR;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    margin-bottom: 1em;
+  }
 }
