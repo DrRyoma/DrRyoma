@@ -10,6 +10,21 @@ $PRIMARY_TEXT_COLOR: #212121;
 $SECONDARY_TEXT_COLOR: #727272;
 $STRONG_TEXT_COLOR: #F8BBD0;
 
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.align-items {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
 .circle {
   background-color: $ACCENT_COLOR;
   border-radius: 50%;
@@ -68,31 +83,31 @@ $STRONG_TEXT_COLOR: #F8BBD0;
   }
 
   #content {
-    display: flex;
-    align-items: center;
+    @extend .flex-box;
+    @extend .align-items;
     margin-top: 30px;
 
     .sign {
       font-size: 100px;
-      margin: 0 30px;
+      margin: 0 15px;
     }
   }
 
   #question {
-    display: flex;
-    align-items: center;
+    @extend .flex-box;
+    @extend .align-items;
     font-size: 30px;
     margin-top: 80px;
 
     span {
-      margin-left: 30px;
+      margin-left: 15px;
       font-size: 50px;
     }
   }
 
   #navigation {
-    display: flex;
-    align-items: center;
+    @extend .flex-box;
+    @extend .align-items;
     margin-top: 30px;
 
     .bubble {
@@ -126,9 +141,9 @@ $STRONG_TEXT_COLOR: #F8BBD0;
   padding: 30px 20px;
 
   #numbers-top {
-    display: flex;
+    @extend .flex-box;
   }
   #numbers-buttom {
-    display: flex;
+    @extend .flex-box;
   }
 }
