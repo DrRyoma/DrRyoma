@@ -71,7 +71,7 @@ $ACTION_COLOR: #009688;
 
 #question-container {
   background-color: $DEFAULT_PRIMARY_COLOR;
-  padding: 30px 20px;
+  padding: 10px 20px;
 
   #description {
     font-size: 50px;
@@ -87,7 +87,7 @@ $ACTION_COLOR: #009688;
   #content {
     @extend .flex-box;
     @extend .align-items;
-    margin-top: 15px;
+    margin-top: 10px;
 
     .sign {
       font-size: 100px;
@@ -99,7 +99,7 @@ $ACTION_COLOR: #009688;
     @extend .flex-box;
     @extend .align-items;
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
 
     span {
       margin-left: 15px;
@@ -110,7 +110,7 @@ $ACTION_COLOR: #009688;
   #navigation {
     @extend .flex-box;
     @extend .align-items;
-    margin-top: 15px;
+    margin-top: 10px;
 
     .bubble {
       display: inline-block;
@@ -121,7 +121,7 @@ $ACTION_COLOR: #009688;
       height: 100px;
       width: 400px;
       text-align: center;
-      font-size: 40px;
+      font-size: 38px;
       color: $SECONDARY_TEXT_COLOR;
     }
     .bubble:after {
@@ -140,7 +140,7 @@ $ACTION_COLOR: #009688;
 }
 
 #numbers {
-  padding: 30px 20px;
+  padding: 15px 20px;
 
   .input-num {
     background-color: $ACTION_COLOR;
