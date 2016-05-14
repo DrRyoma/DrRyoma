@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col md-12 text-center">
+    <%= image_tag("pikachu") %>
+    <h1>ポケモン</h1>
+  </div>
+
+  <%= render 'collections' %>
+
+  <div class="col md-6 text-right">
+    <%= link_to "おわる", {:controller => "openings", :action => "show"}, :class => "btn" %>
+  </div>
+  <div class="col md-6 text-left">
+    <%= link_to "つぎ", {:controller => "games", :action => "show"}, :class => "btn" %>
+  </div>
+</div>
