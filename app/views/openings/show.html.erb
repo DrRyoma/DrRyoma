@@ -2,11 +2,20 @@
   <div class="row">
     <div class="col md-12 text-center">
       <div class="title">
-        <p>リョウマ算数博士</p>
+        <p>リョウマ
+          <ruby>
+            <rb>算数博士</rb>
+            <rp>（</rp><rt>さんすうはかせ</rt><rp>）</rp>
+          </ruby>
+        </p>
       </div>
       <%= image_tag("pikachu.png") %>
-      <h1>すうじをこたえてポケモンをゲットしよう</h1>
-      <%= link_to "はじめる", {:controller => "games", :action => "show"}, :class => "btn" %>
+      <div class="description">
+        <p>すうじをこたえて<br/>ポケモンをゲットしよう</p>
+      </div>
+      <div class="opening-button">
+        <%= link_to "はじめる", {:controller => "games", :action => "show"}, :class => "btn" %>
+      </div>
     </div>
   </div>
 </div>
