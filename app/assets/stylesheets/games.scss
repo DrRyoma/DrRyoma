@@ -17,6 +17,14 @@ $STRONG_TEXT_COLOR: #F8BBD0;
   display: flex;
 }
 
+.align-items {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
 .circle {
   background-color: $ACCENT_COLOR;
   border-radius: 50%;
@@ -76,7 +84,7 @@ $STRONG_TEXT_COLOR: #F8BBD0;
 
   #content {
     @extend .flex-box;
-    align-items: center;
+    @extend .align-items;
     margin-top: 30px;
 
     .sign {
@@ -87,7 +95,7 @@ $STRONG_TEXT_COLOR: #F8BBD0;
 
   #question {
     @extend .flex-box;
-    align-items: center;
+    @extend .align-items;
     font-size: 30px;
     margin-top: 80px;
 
@@ -99,7 +107,7 @@ $STRONG_TEXT_COLOR: #F8BBD0;
 
   #navigation {
     @extend .flex-box;
-    align-items: center;
+    @extend .align-items;
     margin-top: 30px;
 
     .bubble {
