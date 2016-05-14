@@ -1,15 +1,22 @@
-<div class="row">
-  <div class="col md-12 text-center">
-    <%= image_tag("pikachu.png") %>
-    <h1>ポケモン</h1>
-  </div>
+<div id="pokemon_get-container">
+  <div class="row">
+    <div class="col md-12 text-center">
+      <%= image_tag("pikachu.png") %>
+      <div class="title">
+        <p>ピカチュウ</p>
+        <div class="title-get">
+          <p>ゲット！</p>
+        </div>
+      </div>
 
-  <%= render 'collections' %>
+      <div class="collections">
+        <%= render 'collections' %>
+      </div>
 
-  <div class="col md-6 text-right">
-    <%= link_to "おわる", {:controller => "openings", :action => "show"}, :class => "btn" %>
-  </div>
-  <div class="col md-6 text-left">
-    <%= link_to "つぎ", {:controller => "games", :action => "show"}, :class => "btn" %>
+      <div class="next-buttons">
+          <%= link_to "おわる", {:controller => "openings", :action => "show"}, :class => "btn" %>
+          <%= link_to "つぎ", {:controller => "games", :action => "show"}, :class => "btn" %>
+      </div>
+    </div>
   </div>
 </div>
