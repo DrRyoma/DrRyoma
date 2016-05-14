@@ -9,13 +9,13 @@
         </div>
       </div>
 
-      <div class="collections">
-        <%= render 'collections' %>
-      </div>
-
       <div class="next-buttons">
           <%= link_to "おわる", {:controller => "openings", :action => "show"}, :class => "btn" %>
           <%= link_to "つぎ", {:controller => "games", :action => "show"}, :class => "btn" %>
+      </div>
+
+      <div class="collections block">
+        <%= render 'collections' %>
       </div>
     </div>
   </div>
