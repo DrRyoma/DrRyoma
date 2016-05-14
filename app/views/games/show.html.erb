@@ -1,0 +1,44 @@
+<div id="game-container">
+  <header>
+    <h1>すうじをあててポケモンをゲットしよう</h1>
+  </header>
+
+  <div id="question-container">
+    <div id="description">
+      <p>あと 3 かいせいかいすると</p>
+      <p>ポケモンがもらえるよ</p>
+    </div>
+
+    <div id="content">
+      <div class="circle"><div class="inner-num">3</div></div>
+      <div class="sign">+</div>
+      <div class="circle"><div class="inner-num">?</div></div>
+      <div class="sign">=</div>
+      <div class="circle"><div class="inner-num">7</div></div>
+    </div>
+
+    <div id="question">
+      <div class="circle"><div class="inner-num">?</div></div>
+      <span>はどれでしょう？</span>
+    </div>
+
+    <div id="navigation">
+      <%= image_tag 'pikachu.png' %>
+      <div class="bubble bubble-half-left">すうじをおしてね</div>
+    </div>
+  </div>
+
+  <div id="numbers">
+    <div id="numbers-top">
+      <% (0..4).each do |i| %>
+        <div class="btn btn-lg btn-empty"><%= i %></div>
+      <% end %>
+    </div>
+    <div id="numbers-buttom">
+      <% (5..9).each do |i| %>
+        <div class="btn btn-lg btn-empty"><%= i %></div>
+      <% end %>
+    </div>
+  </div>
+
+</div>

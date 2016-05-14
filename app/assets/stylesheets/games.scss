@@ -1,0 +1,129 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$DARK_PRIMARY_COLOR: #0288D1;
+$DEFAULT_PRIMARY_COLOR: #03A9F4;
+$LIGHT_PRIMARY_COLOR: #B3E5FC;
+$ACCENT_COLOR: #FFEB3B;
+$PRIMARY_TEXT_COLOR: #212121;
+$SECONDARY_TEXT_COLOR: #727272;
+
+.circle {
+  background-color: $ACCENT_COLOR;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+
+  .inner-num {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top: 60px;
+    left: 50px;
+    font-size: 80px;
+    color: $PRIMARY_TEXT_COLOR;
+  }
+}
+
+.circle-large {
+  background-color: $ACCENT_COLOR;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+
+  .inner-num {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top: 38px;
+    left: 45px;
+  }
+}
+
+#game-container {
+  color: $LIGHT_PRIMARY_COLOR;
+
+  header {
+    padding: 10px 0;
+    background-color: $DARK_PRIMARY_COLOR;
+    color: #FFF;
+  }
+}
+
+#question-container {
+  background-color: $DEFAULT_PRIMARY_COLOR;
+  padding: 100px 0;
+
+  #description {
+    font-size: 50px;
+    p {
+      margin: 0;
+    }
+  }
+
+  #content {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    .sign {
+      font-size: 100px;
+      margin: 0 30px;
+    }
+  }
+
+  #question {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 80px;
+
+    span {
+      margin-left: 30px;
+      font-size: 50px;
+    }
+  }
+
+  #navigation {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    .bubble {
+      display: inline-block;
+      position: relative;
+      padding: 1em;
+      border-radius: 10px;
+      background: $LIGHT_PRIMARY_COLOR;
+      height: 100px;
+      width: 400px;
+      text-align: center;
+      font-size: 30px;
+      color: $SECONDARY_TEXT_COLOR;
+    }
+    .bubble:after {
+      position: absolute;
+      content: " ";
+      height: 0;
+      width: 0;
+    }
+    .bubble-half-left:after {
+      right: 100%;
+      top: 10%;
+      border-bottom: 30px solid $LIGHT_PRIMARY_COLOR;
+      border-left: 30px solid transparent;
+    }
+  }
+}
+
+#numbers {
+  margin-top: 30px;
+
+  #numbers-top {
+    display: flex;
+  }
+  #numbers-buttom {
+    display: flex;
+  }
+}
