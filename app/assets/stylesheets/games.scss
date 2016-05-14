@@ -25,6 +25,13 @@ $ACTION_COLOR: #009688;
   align-items: center;
 }
 
+.justify-content-center {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
 .circle {
   background-color: $ACCENT_COLOR;
   border-radius: 50%;
@@ -141,11 +148,16 @@ $ACTION_COLOR: #009688;
 #numbers {
   padding: 15px 20px;
 
-  .input-num {
-    background-color: $ACTION_COLOR;
-    margin: 20px 10px;
-    height: 200px;
-    font-size: 80px;
-    color: $PRIMARY_TEXT_COLOR;
+  .numbers-content {
+    @extend .flex-box;
+    @extend .justify-content-center;
+
+    .input-num {
+      background-color: $ACTION_COLOR;
+      margin: 20px 10px;
+      height: 200px;
+      font-size: 80px;
+      color: $PRIMARY_TEXT_COLOR;
+    }
   }
 }
