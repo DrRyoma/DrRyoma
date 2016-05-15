@@ -27,6 +27,3 @@ $ ->
       isPokemonGet = currentCount % 3 == 0
       window.localStorage.setItem("collects_count", currentCount)
       window.localStorage.setItem("is_pokemon_get", isPokemonGet)
-      if isPokemonGet
-        window.location.href = "/pokemon_gets/show"
-        return false
