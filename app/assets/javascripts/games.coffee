@@ -24,8 +24,10 @@ $ ->
       $(this).addClass("disabled")
       return false
     else
+      return false if $(this).hasClass("disabled")
       collectsCount = parseInt window.localStorage.getItem("collects_count"), 10
       currentCount = if isNaN(collectsCount) then 1 else ++collectsCount
       isPokemonGet = currentCount % 3 == 0
       window.localStorage.setItem("collects_count", currentCount)
       window.localStorage.setItem("is_pokemon_get", isPokemonGet)
+      $(this).addClass("disabled")

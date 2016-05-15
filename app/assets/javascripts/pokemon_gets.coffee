@@ -8,6 +8,8 @@ $ ->
   pokemonCount = Math.floor currentCount / 3
   pokemon = POKEMONS[pokemonCount - 1]
 
+  return false if pokemon == undefined
+
   $("#pokemon-image").attr("src", pokemon["image_path"])
   $("#pokemon-name").html(pokemon["name"])
 
