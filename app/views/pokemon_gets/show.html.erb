@@ -1,9 +1,9 @@
 <div id="pokemon_get-container">
   <div class="row">
     <div class="col md-12 text-center">
-      <%= image_tag("pikachu.png") %>
+      <%= image_tag "", id: "pokemon-image" %>
       <div class="title">
-        <p>ピカチュウ</p>
+        <p id="pokemon-name"></p>
         <div class="title-get">
           <p>ゲットだぜ！</p>
         </div>
@@ -20,3 +20,8 @@
     </div>
   </div>
 </div>
+
+<script>
+var isPokemonGet = window.localStorage.getItem("is_pokemon_get") == "true";
+if (!isPokemonGet) { window.location.href = "/"; }
+</script>
