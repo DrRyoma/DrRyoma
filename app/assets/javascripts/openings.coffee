@@ -3,7 +3,8 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  $("#opening-container").on "click", ()->
+  $("#opening-container img").on "click", ()->
     window.localStorage.setItem("collects_count", 0)
     window.localStorage.setItem("is_pokemon_get", false)
     console.log "clear localstrage"
+    return false
