@@ -60,8 +60,12 @@ $ACTION_COLOR: #009688;
     margin-bottom: 0;
   }
 
-  .next-buttons, .get-pokemon-button {
+  .next-buttons {
     padding: 0.6em 0;
     font-size: 6em;
+  }
+
+  .btn-get-pokemon {
+    margin-bottom: 10px;
   }
 }
