@@ -18,7 +18,9 @@ $ ->
   $(".input-num").on "click", () ->
     q = parseInt($(this).attr("data-value"), 10)
     if question != q
-      $("#navigation").find(".bubble").html("もういっかい！")
+      b = $("#navigation").find(".bubble")
+      b.html("もういっかい！")
+      b.css('color', '#E91E63')
       $(this).addClass("disabled")
       return false
     else
