@@ -11,7 +11,7 @@
         <%= image_tag("pikachu.png") %>
       </div>
       <div class="description">
-        <p>あと３かいで<br/>ポケモンゲット！</p>
+        <p>あと <span id="get-count"></span> かいで<br/>ポケモンゲット！</p>
       </div>
       <div class="next-buttons">
           <%= link_to "おわる", {:controller => "openings", :action => "show"}, :class => "btn" %>

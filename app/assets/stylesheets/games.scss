@@ -59,6 +59,10 @@ $ACTION_COLOR: #009688;
   }
 }
 
+#get-count {
+  color: $STRONG_TEXT_COLOR;
+}
+
 #game-container {
   color: $LIGHT_PRIMARY_COLOR;
 
@@ -78,10 +82,6 @@ $ACTION_COLOR: #009688;
     font-size: 50px;
     p {
       margin: 0;
-
-      span {
-        color: $STRONG_TEXT_COLOR;
-      }
     }
   }
 
