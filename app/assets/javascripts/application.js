@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 
-const POKEMONS = {
+const POKEMONS = [
   {
     name: "ピカチュウ",
     image_path: "pikachu.png"
@@ -99,4 +99,4 @@ const POKEMONS = {
     name: "グレイシア",
     image_path: "glaceon.png"
   }
-}
+];
