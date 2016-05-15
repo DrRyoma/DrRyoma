@@ -36,12 +36,24 @@ $ACTION_COLOR: #009688;
   .title {
     color: $STRONG_TEXT_COLOR;
     font-size: 5em;
-    padding: 0.6em 3.6em;
+    padding: 0 3.6em　0.6em 3.6em;
+  }
+
+  .title p {
+    margin-bottom: 0;
+  }
+
+  .pokemon {
+    padding-bottom: 3em;
   }
 
   .description {
     font-size: 4em;
-    padding: 0.6em 3.6em;
+    padding: 0 3.6em;
+  }
+
+  .description p {
+    margin-bottom: 0;
   }
 
   .next-buttons {
