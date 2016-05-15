@@ -31,7 +31,12 @@ $ACTION_COLOR: #009688;
 
   color: $LIGHT_PRIMARY_COLOR;
   background-color: $DEFAULT_PRIMARY_COLOR;
-  padding: 5em 0;
+  padding: 0 0;
+
+  .pokemon {
+    background-image: url("pokemon-back.jpeg");
+    background-size: 115%;
+  }
 
   #pokemon-image {
     width: 50em;
