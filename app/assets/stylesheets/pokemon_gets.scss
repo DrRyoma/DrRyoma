@@ -33,9 +33,14 @@ $ACTION_COLOR: #009688;
   background-color: $DEFAULT_PRIMARY_COLOR;
   padding: 5em 0;
 
+  #pokemon-image {
+    width: 50em;
+  }
+
   .title {
     font-size: 5em;
     padding: 0.6em 1.8em;
+    color: $STRONG_TEXT_COLOR;
   }
 
   .title p {
@@ -65,22 +70,22 @@ $ACTION_COLOR: #009688;
   }
 
   .pokemons {
-    padding-left: 1.5em;
+    padding-left: 0.3em;
   }
 
   .circle-not-got{
     background-color: GRAY;
     border-radius: 50%;
-    height: 2em;
-    width: 2em;
+    height: 4em;
+    width: 4em;
     margin-bottom: 1em;
   }
 
   .circle-got{
     background-color: $ACCENT_COLOR;
     border-radius: 50%;
-    height: 2em;
-    width: 2em;
+    height: 4em;
+    width: 4em;
     margin-bottom: 1em;
   }
 }
