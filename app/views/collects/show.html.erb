@@ -14,11 +14,9 @@
         <p>あと <span id="get-count"></span> かいで<br/>ポケモンゲット！</p>
       </div>
       <div class="next-buttons">
-          <%= link_to "おわる", {:controller => "openings", :action => "show"}, :class => "btn" %>
-          <%= link_to "つぎ", {:controller => "games", :action => "show"}, :class => "btn" %>
-      </div>
-      <div class="get-pokemon-button">
-          <%= link_to "ポケモンゲット！", {:controller => "pokemon_gets", :action => "show"}, :class => "btn" %>
+          <%= link_to "おわる", {:controller => "openings", :action => "show"}, :class => "btn btn-next" %>
+          <%= link_to "つぎ", {:controller => "games", :action => "show"}, :class => "btn btn-next" %>
+          <%= link_to "ポケモンゲット！", {:controller => "pokemon_gets", :action => "show"}, :class => "btn btn-get-pokemon" %>
       </div>
     </div>
   </div>

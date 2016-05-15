@@ -6,6 +6,6 @@ $ ->
   isPokemonGet = window.localStorage.getItem("is_pokemon_get") == "true"
   if isPokemonGet
     $("#collect-container .description").hide()
-    $("#collect-container .next-buttons").hide()
+    $("#collect-container .btn-next").hide()
   else
-    $("#collect-container .get-pokemon-button").hide()
+    $("#collect-container .btn-get-pokemon").hide()
