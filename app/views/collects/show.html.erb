@@ -4,9 +4,14 @@
       <div class="title">
         <p>せいかい！</p>
       </div>
-      <%= image_tag("pikachu.png") %>
+      <div class="good">
+        <%= image_tag("good.png") %>
+      </div>
+      <div class="pokemon">
+        <%= image_tag("pikachu.png") %>
+      </div>
       <div class="description">
-        <p><br/></p>
+        <p>あと３かいで<br/>ポケモンゲット！</p>
       </div>
       <div class="next-buttons">
           <%= link_to "おわる", {:controller => "openings", :action => "show"}, :class => "btn" %>
